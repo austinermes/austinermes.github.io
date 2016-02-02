@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fmodern\fcharset0 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww22960\viewh13840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+
+\fs72 GIT PAGE: austinermes.github.io
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj
+
+\f1\fs20 \cf0 \expnd0\expndtw0\kerning0
+ANSWER 1:
+\fs24 \kerning1\expnd0\expndtw0 \
+
+\b \'a0he messed up twice.
+\b0 \
+if (userAge = 0);\
+
+\b First, he has only one equals sign instead of two in the if's condition. this means userAge will be other wise known as zero and isn\'92t being compared to zero. The second fault is the semicolon at the end ifs and and loops don\'92t need them. 
+\b0 \
+\
+
+\b The next two faults are with these lines:
+\b0 \
+else if ( userAge < 0 | userAge > 200)\
+\'a0\'a0\'a0alert("I think you may be lying about your age");\
+else\
+
+\b Only one Boolean was used instead of 2. the alert needs to be inside of the curly brackets
+\b0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Answer 2:\
+\'a0\
+
+\b <html>\
+\
+<body>\
+    <script language=JavaScript>\
+        var timesTable = 12;\
+        var timesBy;\'a0\'a0\'a0\'a0\
+        for (timesBy = 1; timesBy < 13; timesBy++) \{\'a0\'a0\'a0\
+            document.write(timesTable + " * " + timesBy + " = " + timesBy * timesTable + \'a0\'a0\'a0\'a0\'a0\'a0"<br>");\
+        \}\
+    </script>\
+</body>\
+\
+</html>
+\b0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Answer 3:\
+\'a0\
+
+\b <html>\
+\
+<body>\
+    <script language=JavaScript>\
+        function writeTimesTable(timesTable, timesByStart, timesByEnd) \{\'a0\'a0\'a0\
+            for (; timesByStart <= timesByEnd; timesByStart++)\'a0\'a0\'a0 \{\'a0\'a0\'a0\'a0\'a0\'a0\
+                document.write(timesTable + " * " + timesByStart + " = " + timesByStart * timesTable + "<br>");\'a0\'a0\'a0\
+            \}\
+        \}\
+        writeTimesTable(4, 4, 9);\
+    </script>\
+</body>\
+\
+</html>
+\b0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\b \
+
+\b0 Answer 4:
+\b \
+\'a0\
+<html>\
+\
+<body>\
+    <script language=JavaScript>\
+        function writeTimesTable(timesTable, timesByStart, timesByEnd) \{\'a0\'a0\'a0\
+            for (; timesByStart <= timesByEnd; timesByStart++)\'a0\'a0\'a0 \{\'a0\'a0\'a0\'a0\'a0\'a0\
+                document.write(timesTable + " * " + timesByStart + " = " + \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0timesByStart * timesTable + "<br>");\'a0\'a0\'a0\
+            \}\
+        \}\'a0\'a0\'a0\'a0\
+        var timesTable;\'a0\'a0\'a0\'a0\
+        while ((timesTable = prompt("Enter the times table", -1)) != -1) \{\'a0\'a0\'a0\
+            while (isNaN(timesTable) == true)\'a0\'a0\'a0 \{\'a0\'a0\'a0\'a0\
+                timesTable = prompt(timesTable + " is not a valid number, please retry", -1);\
+\
+                \'a0\'a0\'a0\
+            \}\'a0\'a0\'a0\'a0\'a0\'a0\'a0\
+            if (timesTable == -1)\'a0\'a0\'a0 \{\'a0\'a0\'a0\'a0\'a0\'a0\
+                break;\'a0\'a0\'a0\
+            \}\'a0\'a0\'a0\'a0\'a0\'a0\'a0\
+            document.write("<br>The " + timesTable + " times table<br>");\'a0\'a0\'a0\
+            writeTimesTable(timesTable, 1, 12);\'a0\'a0\'a0\'a0\
+        \}\
+    </script>\
+</body>\
+\
+</html>
+\f2\b0\fs20 \
+}
