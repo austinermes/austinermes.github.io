@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <title>Subtract Two Numbers</title>
+
+</head>
+
+<body>
+    <pre>
+//paste js code here
+    </pre>
+    <div id="result"></div>
+    <button id="getAnswer" type="button">Get Answer</button>
+    <div>
+
+        <script>
+            $(document).ready(function() {
+
+                function subtractTwoNumbers(n1, n2) {
+                    if (isNaN() && isNaN()) {
+                        return n1 - n2;
+                    } else {
+                        return "error!"
+                    }
+
+                }
+
+                function getAnswer() {
+
+                    var first = prompt("Enter the first number", 6);
+                    var second = prompt("Enter the second number", -7);
+                    var answer = subtractTwoNumbers(first, second);
+                    $("#result").html(answer);
+                }
+
+                $("#getAnswer").on("click", function() {
+                    getAnswer();
+                })
+            });
+        </script>
+</body>
+
+
+</html>
