@@ -1,0 +1,42 @@
+.container {
+    background-image: url(../images/confectionary.png);
+}
+
+.icecreamimage {
+    width: 100%;
+}
+
+.name {
+    padding: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.flavour {
+    font-size: 20px;
+    text-align: center;
+}
+
+.scoops {
+    font-size: 30px;
+    text-align: center;
+}
+
+.buyerName {
+    padding: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.buyerComment {
+    font-weight: 200;
+}
+
+.heading {
+    padding: 30px;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    border: black solid 10px;
+}
