@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-        $.getJSON("jsonDatabase/icecream.json", function (data) {
+        $.getJSON("jsonDatabase/beer.json", function (data) {
 
                 console.dir(data);
                 var html = "";
@@ -10,13 +10,13 @@ $(document).ready(function () {
                 $.each(data, function (index, item) {
                         html += '<div class="col-md-4">' +
                             '<div class = "name" >' + item.name + '</div>' +
-                            '<div class = "flavour" >' + item.flavour + '</div>' +
-                            '<div class = "scoops" >' + item.scoops + '</div>' +
-                            '<img class="icecreamimage" src="' + item.image + '"/>' +
+                            '<div class = "brand" >' + item.brand + '</div>' +
+                            '<div class = "cans" >' + item.cans + '</div>' +
+                            '<img class="beerimage" src="' + item.image + '"/>' +
                             // '<div class="commentsContainer">';
 
                             '<div class="panel panel-default">' + //added
-                            '<div class="panel-heading">Ice Cream Reviews! </div>'; //added
+                            '<div class="panel-heading">Check what people have said about the brands </div>'; //added
                         $.each(item.comments, function (ind, i) {
                                 html += '<div class="panel-body">' + //added
                                     '<div class ="buyerName">' + i.username + '</div>' +
@@ -45,23 +45,9 @@ $(document).ready(function () {
 
                     }) //EACH
 
-                $("#icecreamdata").append(html);
+                $("#beerdata").append(html);
 
             }) //getJSON
 
     }) //FUNCTIONS
 
-/*
-<div class ="col-md-4 icecream">
-<div class ="icecreamName">
-<div class ="icecreamType">
-<div class ="icecream">
-<img src"#"/>
-<div class ="col-md-4">
-<div class ="buyerName">
-<div class ="buyerType">
-<div class ="icecreamStars">
-
-</div>
-
-*/

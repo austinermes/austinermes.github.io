@@ -1,0 +1,46 @@
+.container{
+background-color: #005c99;
+background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+}
+
+.beerimage {
+    width: 100%;
+}
+
+.name {
+    padding: 10px;
+    font-size: 43px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.brand {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.cans {
+    font-size: 30px;
+    text-align: center;
+    font-family:cursive;
+}
+
+.buyerName {
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.buyerComment {
+    font-weight: 500;
+}
+
+.heading {
+    padding: 30px;
+    font-size: 125px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border: gold solid 10px;
+}

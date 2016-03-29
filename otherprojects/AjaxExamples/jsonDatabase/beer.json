@@ -1,0 +1,67 @@
+[{
+    "name": "Stella Artois ",
+    "brand": "Domestic",
+    "cans": "6 cans $12.95",
+    "image": "images/stella.jpg",
+    "comments": [{
+
+        "username": "chugs11",
+        "stars": 5,
+        "comment": "i buy this to impress people and it works!"
+  }, {
+        "username": "beersonthewall",
+        "stars": 4,
+        "comment": "what a taste!"
+
+  }, {
+        "username": "pinned247",
+        "stars": 0,
+        "comment": "tastes like piss"
+  }]
+
+}, {
+    "name": "Budweiser",
+    "brand": "Domestic",
+    "cans": "6 cans $8.95",
+    "image": "images/bud.jpg",
+    "comments": [{
+
+        "username": "jayz",
+        "stars": 4,
+        "comment": "nice when chilled! "
+  }, {
+        "username": "boldandold",
+        "stars": 5,
+        "comment": "5 stars if the girl is included^^^^^^"
+
+  }, {
+        "username": "SHOOK",
+        "stars": 0,
+        "comment": "the gal don't cume with da beer "
+  }]
+
+
+}, {
+    "name": "Corona",
+    "brand": "Import",
+    "cans": "6 cans $10.95",
+    "image": "images/corona.jpg",
+    "comments": [{
+
+        "username": "coronaislife",
+        "stars": 5,
+        "comment": "love dis shit "
+  }, {
+        "username": "beerhere",
+        "stars": 3,
+        "comment": "overrated "
+
+  }, {
+        "username": "canyoudrink",
+        "stars": 5,
+        "comment": "great taste!"
+  }]
+
+
+
+}]

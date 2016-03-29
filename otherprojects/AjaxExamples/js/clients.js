@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $("#getClients").on("click", function() {
 
-        var url = "http://jessnapes.github.io/OTHERPROJECTS/ajaxExamples/jsonDatabase/clients.json";
+        var url = "http://austinermes.github.io/otherprojects/ajaxExamples/jsonDatabase/clients.json";
 
         $.getJSON(url, function(data) {
             var html = "<table class='table table-hover table-striped'>" +
