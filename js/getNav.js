@@ -1,6 +1,6 @@
 
 //get the file (replace with your own url)
-$.get("http://jessnapes.github.io/partials/nav.html", function(data) {
+$.get("http://austinermes.github.io/partials/nav.html", function(data) {
 
   $(document).ready(function() {
 
