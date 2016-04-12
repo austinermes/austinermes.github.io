@@ -1,0 +1,67 @@
+[{
+    "name": "Ouuuu Chocolate ",
+    "flavour": "Chocolate",
+    "scoops": "3 scoops for $5.98",
+    "image": "images/chocolate_icecream.jpg",
+    "comments": [{
+
+        "username": "swaggymcjaggy",
+        "stars": 5,
+        "comment": "What a great fucking ice cream like omg"
+  }, {
+        "username": "sunny25",
+        "stars": 5,
+        "comment": "Love the flavour"
+
+  }, {
+        "username": "drunkiefunky",
+        "stars": 1,
+        "comment": "Hate chocolate"
+  }]
+
+}, {
+    "name": "Plain Jane Vanilla",
+    "flavour": "Vanilla Bean",
+    "scoops": "3 scoops for $5.98",
+    "image": "images/vanilla_icecream.jpg",
+    "comments": [{
+
+        "username": "Ice-Cream-Lover",
+        "stars": 2,
+        "comment": "This ice cream is too plain! But Traditoinal, if thats what youre into ! "
+  }, {
+        "username": "bigandbeautiful",
+        "stars": 5,
+        "comment": "BEST VANILLA ICE CREAM EVER"
+
+  }, {
+        "username": "hotandwasted",
+        "stars": 4,
+        "comment": "Exactly what i expected!! "
+  }]
+
+
+}, {
+    "name": "Pepto Pink",
+    "flavour": "Strawberry",
+    "scoops": "3 scoops for $5.98",
+    "image": "images/strawberry_icecream.jpg",
+    "comments": [{
+
+        "username": "lowkeyfeelinu",
+        "stars": 4,
+        "comment": "dope flavour yo, but lykkkeeeeeeeeee im over it "
+  }, {
+        "username": "happyandiknowit",
+        "stars": 4,
+        "comment": "i love strawberries so i love this ice cream flavour. its different "
+
+  }, {
+        "username": "ByeWorld19",
+        "stars": 5,
+        "comment": "Better than i expected"
+  }]
+
+
+
+}]
