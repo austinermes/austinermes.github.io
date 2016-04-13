@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
         //get all the nav li, add click event
-        $(".nav").find("li").on("click", function () {
+        $(".nav").find("li").on("click", function() {
                 $("#pageContent").hide().html("");
                 //remove all active class
                 $(".nav").find("li").removeClass("active");
@@ -18,19 +18,19 @@ $(document).ready(function () {
         function getPartial(partial) {
 
             if (partial == "homePage") { //ajax get home.html
-                $.get("partials/home.html", function (data) {
+                $.get("partials/home.html", function(data) {
                     $("#pageContent").html(data);
                     $('.carousel').carousel();
                 })
             } else if (partial == "seeIceCreamPage") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
-                $.getJSON("jsonDatabase/finaljson.json", function (data) {
+                $.getJSON("jsonDatabase/finaljson.json", function(data) {
 
                         console.dir(data);
                         var html = "";
 
 
-                        $.each(data, function (index, item) {
+                        $.each(data, function(index, item) {
                                 html += '<div class="col-md-4">' +
                                     '<div class = "name" >' + item.name + '</div>' +
                                     '<div class = "flavour" >' + item.flavour + '</div>' +
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
                                     '<div class="panel panel-default">' + //added
                                     '<div class="panel - heading">Click Here to Order This Flavour</div>'; //added
-                                $.each(item.comments, function (ind, i) {
+                                $.each(item.comments, function(ind, i) {
                                         html += '<div class="panel-body">' + //added
                                             '<div class ="buyerName">' + i.username + '</div>' +
                                             '<div class ="buyerComment">' + i.comment + '</div>' +
@@ -73,22 +73,22 @@ $(document).ready(function () {
                     }) //getJSON
 
             } else if (partial == "orderPage") { //ajax get order.html
-                $.get("partials/order2.html", function (data) {
+                $.get("partials/order2.html", function(data) {
 
                         $("#pageContent").html(data);
 
                         $('#startOrderDate, #desiredDelieveryDate').datepicker({});
 
-                        $("#submitButton").on("click", function () {
+                        $("#submitButton").on("click", function() {
 
                                 //get all empty inputs and select
                                 //add error class to div container
-                                $("input, select").filter(function () {
+                                $("input, select").filter(function() {
                                     return !this.value;
                                 }).closest("div").addClass("has-error");
 
                                 //remove error class for non empty ones
-                                $("input, select").filter(function () {
+                                $("input, select").filter(function() {
                                     return this.value; //removed !
                                 }).closest("div").removeClass("has-error");
 
@@ -112,7 +112,7 @@ $(document).ready(function () {
             //get all teh jquery objects
             var formData = $("input, select");
             //for each jquery object
-            formData.each(function () {
+            formData.each(function() {
                 var id = $(this).attr("id"); //get the id of the element
                 order[id] = $(this).val(); //set the field and the value
             })
