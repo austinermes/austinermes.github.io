@@ -1,7 +1,7 @@
 [{
     "name": "Lawn Seating ",
-    "flavour": "Molson Amphitheater",
-    "scoops": "$100",
+    "molsonamp": "Molson Amphitheater",
+    "price": "$100",
     "image": "images/lawn_drake.jpg",
     "comments": [{
 
@@ -21,8 +21,8 @@
 
 }, {
     "name": "Upper Seating",
-    "flavour": "Molson Amphitheater",
-    "scoops": "$150",
+    "molsonamp": "Molson Amphitheater",
+    "price": "$150",
     "image": "images/seats_drake.jpg",
     "comments": [{
 
@@ -43,8 +43,8 @@
 
 }, {
     "name": "General Admission",
-    "flavour": "Molson Amphitheater",
-    "scoops": "$300",
+    "molsonamp": "Molson Amphitheater",
+    "price": "$300",
     "image": "images/ga_drake.jpg",
     "comments": [{
 

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+ console.log("Hi Mark!");
         //get all the nav li, add click event
         $(".nav").find("li").on("click", function() {
                 $("#pageContent").hide().html("");
@@ -22,7 +22,7 @@ $(document).ready(function() {
                     $("#pageContent").html(data);
                     $('.carousel').carousel();
                 })
-            } else if (partial == "seeIceCreamPage") { //ajax models.html
+            } else if (partial == "seatoptions") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
                 $.getJSON("jsonDatabase/finaljson.json", function(data) {
 
@@ -33,13 +33,13 @@ $(document).ready(function() {
                         $.each(data, function(index, item) {
                                 html += '<div class="col-md-4">' +
                                     '<div class = "name" >' + item.name + '</div>' +
-                                    '<div class = "flavour" >' + item.flavour + '</div>' +
-                                    '<div class = "scoops" >' + item.scoops + '</div>' +
-                                    '<img class="icecreamimage" src="' + item.image + '"/>' +
+                                    '<div class = "molsonamp" >' + item.molsonamp + '</div>' +
+                                    '<div class = "price" >' + item.price + '</div>' +
+                                    '<img class="seatpics" src="' + item.image + '"/>' +
                                     // '<div class="commentsContainer">';
 
                                     '<div class="panel panel-default">' + //added
-                                    '<div class="panel - heading">Click Here to Order This Flavour</div>'; //added
+                                    '<div class="panel - heading">TICKET SALES END APRIL 20th</div>'; //added
                                 $.each(item.comments, function(ind, i) {
                                         html += '<div class="panel-body">' + //added
                                             '<div class ="buyerName">' + i.username + '</div>' +
@@ -76,8 +76,18 @@ $(document).ready(function() {
                 $.get("partials/order2.html", function(data) {
 
                         $("#pageContent").html(data);
+                     $("#submitButton").on("mouseenter", function () {
+                            $("#log").append("<br>Button mouseenter");
+                            $(this).text("Complete Order!");
+                        })
 
-                        $('#startOrderDate, #desiredDelieveryDate').datepicker({});
+                        .on("mouseleave", function () {
+                            $("#log").append("<br>Button mouseleave");
+                            $(this).text("Order Now!");
+                        });
+
+
+                        $("#attenddate").datepicker({});
 
                         $("#submitButton").on("click", function() {
 
@@ -105,6 +115,7 @@ $(document).ready(function() {
             $("#pageContent").fadeIn();
 
         }
+    
 
         function sendConfirmation() {
             //make an object to record data for database;
@@ -118,9 +129,8 @@ $(document).ready(function() {
             })
 
             alert("Sending to database " + JSON.stringify(order));
-            $("#successMsg").html("What A Yummy Order! Thank You!  <br/><br/>" +
-                order.IceCreamSelect + " Will be delivered from Ice Cream Mania on " +
-                order.startOrderDate + "<img src='images/icecream-scoop-order'>");
+            $("#successMsg").html("Welcome to OVO Fest 2016<br/><br/>" +
+                order.seatselect + "wristband(s) will come in the mail in a couple days! ");
 
         } //sendConfirmation
 
