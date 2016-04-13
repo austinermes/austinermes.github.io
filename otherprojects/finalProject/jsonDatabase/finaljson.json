@@ -1,65 +1,65 @@
 [{
-    "name": "Ouuuu Chocolate ",
-    "flavour": "Chocolate",
-    "scoops": "3 scoops for $5.98",
-    "image": "images/chocolate_icecream.jpg",
+    "name": "Lawn Seating ",
+    "flavour": "Molson Amphitheater",
+    "scoops": "$100",
+    "image": "images/lawn_drake.jpg",
     "comments": [{
 
-        "username": "swaggymcjaggy",
+        "username": "xoxoxox",
         "stars": 5,
-        "comment": "What a great fucking ice cream like omg"
+        "comment": "good view if your eyes are good"
   }, {
-        "username": "sunny25",
-        "stars": 5,
-        "comment": "Love the flavour"
+        "username": "lovetosing",
+        "stars": 3,
+        "comment": "spend the extra money"
 
   }, {
-        "username": "drunkiefunky",
+        "username": "hatersgonh8",
+        "stars": 0,
+        "comment": "i hate Drake"
+  }]
+
+}, {
+    "name": "Upper Seating",
+    "flavour": "Molson Amphitheater",
+    "scoops": "$150",
+    "image": "images/seats_drake.jpg",
+    "comments": [{
+
+        "username": "OVOlit",
+        "stars": 4,
+        "comment": "Crowd is good everywhere! Come!"
+  }, {
+        "username": "startedfromthebottom_stillhere",
         "stars": 1,
-        "comment": "Hate chocolate"
-  }]
-
-}, {
-    "name": "Plain Jane Vanilla",
-    "flavour": "Vanilla Bean",
-    "scoops": "3 scoops for $5.98",
-    "image": "images/vanilla_icecream.jpg",
-    "comments": [{
-
-        "username": "Ice-Cream-Lover",
-        "stars": 2,
-        "comment": "This ice cream is too plain! But Traditoinal, if thats what youre into ! "
-  }, {
-        "username": "bigandbeautiful",
-        "stars": 5,
-        "comment": "BEST VANILLA ICE CREAM EVER"
+        "comment": "Definately going GA this year"
 
   }, {
-        "username": "hotandwasted",
+        "username": "legsareswole",
         "stars": 4,
-        "comment": "Exactly what i expected!! "
+        "comment": "nice to have a place to sit!! "
   }]
 
 
 }, {
-    "name": "Pepto Pink",
-    "flavour": "Strawberry",
-    "scoops": "3 scoops for $5.98",
-    "image": "images/strawberry_icecream.jpg",
+    "name": "General Admission",
+    "flavour": "Molson Amphitheater",
+    "scoops": "$300",
+    "image": "images/ga_drake.jpg",
     "comments": [{
 
-        "username": "lowkeyfeelinu",
-        "stars": 4,
-        "comment": "dope flavour yo, but lykkkeeeeeeeeee im over it "
+        "username": "waguan",
+        "stars": 5,
+        "comment": "jeeez soo pumped "
   }, {
-        "username": "happyandiknowit",
-        "stars": 4,
-        "comment": "i love strawberries so i love this ice cream flavour. its different "
+        "username": "fu*kmeekmill",
+        "stars": 5,
+        "comment": "great event! "
 
   }, {
-        "username": "ByeWorld19",
+        "username": "VIEWS416",
         "stars": 5,
-        "comment": "Better than i expected"
+        "comment": "crazy year for Toronto. GA was awesome"
   }]
 
 
